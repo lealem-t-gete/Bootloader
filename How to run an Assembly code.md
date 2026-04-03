@@ -25,4 +25,11 @@
    1. Assemble: `nasm -f elf64 hello.asm -o hello.o`
    2. Link: `hello.o -o hello`
    3. Excute: `./hello`
+
+## So what is happing?
+The assembler which is called by the `nasm -f elf64 filename.asm` creates a file called `filename.o` which is an object file.
+
+The Linker which is called by `ld file.o -o program` which creates the final excutable file
+
+Then to run it we use `./program` and to debug it we use `gdb ./program` which is a GNU Debugger, as assembly don't have a debugger on run
    
